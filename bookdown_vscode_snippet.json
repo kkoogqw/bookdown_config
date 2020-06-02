@@ -1,0 +1,559 @@
+{	
+	// Markdown inline elements:
+	"Insert italic text": {
+		"prefix": "*i",
+		"body": [
+			"*$1*$2"
+		],
+		"description": "插入斜体文本"
+	},
+	"Insert blod text": {
+		"prefix": "*b",
+		"body": [
+			"**$1**$2"
+		],
+		"description": "插入粗体文本"
+	},
+	"Insert blod & itlaic text": {
+		"prefix": "*ib",
+		"body": [
+			"***$1***$2"
+		],
+		"description": "插入斜粗体文本"
+	},
+	"Insert foot-text(subscript)": {
+		"prefix": "~sub",
+		"body": [
+			"~$1~$2"
+		],
+		"description": "下标元素"
+	},
+	"Insert head-text(superscript)": {
+		"prefix": "^super",
+		"body": [
+			"^$1^$2"
+		],
+		"description": "上标元素"
+	},
+	"Insert inline code": {
+		"prefix": "`",
+		"body": [
+			"`$1`$2"
+		],
+		"description": "插入行内代码"
+	},
+	"Insert a basical link": {
+		"prefix": "-link",
+		"body": [
+			"[${1,link-name}](${2,link-address})"
+		],
+		"description": "插入Markdown链接"
+	},
+	"Insert an image": {
+		"prefix": "-img",
+		"body": [
+			"![${1,image-name}](${2,image-address})"
+		],
+		"description": "插入Markdown图片连接"
+	},
+	"Insert a footnote": {
+		"prefix": "-footnote",
+		"body": [
+			"^[$1]"
+		],
+		"description": "插入Markdown脚注"
+	},
+	"Inline math expression": {
+		"prefix": "i-mat-exp",
+		"body": [
+			"$1$"
+		],
+		"description": "插入行内Latex数学公式"
+	},
+	
+	// Markdown block-level elements
+	"Not index title": {
+		"prefix": "no-index",
+		"body": [
+			"{-}"
+		],
+		"description": "标题不进行编号"
+	},
+	"Level title 1": {
+		"prefix": "#1",
+		"body": [
+			"# $1"
+		],
+		"description": "插入1级标题"
+	},
+	"Level title 2": {
+		"prefix": "#2",
+		"body": [
+			"## $1"
+		],
+		"description": "插入2级标题"
+	},
+	"Level title 3": {
+		"prefix": "#3",
+		"body": [
+			"### $1"
+		],
+		"description": "插入3级标题"
+	},
+	"Level title 4": {
+		"prefix": "#4",
+		"body": [
+			"#### $1"
+		],
+		"description": "插入4级标题"
+	},
+	"Level title 5": {
+		"prefix": "#5",
+		"body": [
+			"##### $1"
+		],
+		"description": "插入5级标题"
+	},
+	"Level title 6": {
+		"prefix": "#6",
+		"body": [
+			"###### $1"
+		],
+		"description": "插入6级标题"
+	},
+	"Unsorted list": {
+		"prefix": "u-list",
+		"body": [
+			"* $1"
+		],
+		"description": "插入无序列表"
+	},
+	"Sorted list": {
+		"prefix": "s-list",
+		"body": [
+			"1. $1"
+		],
+		"description": "插入有序列表"
+	},
+	"Blockquotes": {
+		"prefix": "block-quote",
+		"body": [
+			"> $1"
+		],
+		"description": "插入引用文字段落"
+	},
+	"Insert line": {
+		"prefix": "line",
+		"body": [
+			"---"
+		],
+		"description": "插入分割线"
+	},
+	"Block math expression": {
+		"prefix": "b-mat-exp",
+		"body": [
+			"$$",
+			"$1",
+			"$$"
+		],
+		"description": "插入行间Latex公式"
+	},
+	"Plain code block": {
+		"prefix": "code",
+		"body": [
+			"```$1",
+			"$2",
+			"```"
+		],
+		"description": "空白代码片段/A plain code block"
+	},
+	"ARM-asm code block": {
+		"prefix": "armasm-code",
+		"body": [
+			"```asmasm",
+			"$1",
+			"```"
+		],
+		"description": "ARM汇编代码片段/ARM Assembled code block"
+	},
+	"x86-asm code block": {
+		"prefix": "x86asm-code",
+		"body": [
+			"```x86asm",
+			"$1",
+			"```"
+		],
+		"description": "x86汇编代码片段/x86 Assembled code block"
+	},
+	"C code block": {
+		"prefix": "c-code",
+		"body": [
+			"```c",
+			"$1",
+			"```"
+		],
+		"description": "C代码片段/C code block"
+	},
+	"C++ code block": {
+		"prefix": "cpp-code",
+		"body": [
+			"```cpp",
+			"$1",
+			"```"
+		],
+		"description": "C++代码片段/C++ code block"
+	},
+	"C# code block": {
+		"prefix": "c#-code",
+		"body": [
+			"```csharp",
+			"$1",
+			"```"
+		],
+		"description": "C#代码片段/C# code block"
+	},
+	"Java code block": {
+		"prefix": "java-code",
+		"body": [
+			"```java",
+			"$1",
+			"```"
+		],
+		"description": "Java代码片段/Java code block"
+	},
+	"JavaScript code block": {
+		"prefix": "js-code",
+		"body": [
+			"```js",
+			"$1",
+			"```"
+		],
+		"description": "JavaScript代码片段/JavaScript code block"
+	},
+	"Python code block": {
+		"prefix": "py-code",
+		"body": [
+			"```python",
+			"$1",
+			"```"
+		],
+		"description": "Python代码片段/Python code block"
+	},
+	"Golang code block": {
+		"prefix": "go-code",
+		"body": [
+			"```Go",
+			"$1",
+			"```"
+		],
+		"description": "Golang代码片段/Golang code block"
+	},
+	"Rust code block": {
+		"prefix": "rs-code",
+		"body": [
+			"```rust",
+			"$1",
+			"```"
+		],
+		"description": "Rust代码片段/Rust code block"
+	},
+	"Swift code block": {
+		"prefix": "swf-code",
+		"body": [
+			"```swift",
+			"$1",
+			"```"
+		],
+		"description": "swift代码片段/swift code block"
+	},
+	"Php code block": {
+		"prefix": "php-code",
+		"body": [
+			"```php",
+			"$1",
+			"```"
+		],
+		"description": "swift代码片段/swift code block"
+	},
+	"SQL code block": {
+		"prefix": "sql-code",
+		"body": [
+			"```sql",
+			"$1",
+			"```"
+		],
+		"description": "SQL代码片段/SQL code block"
+	},
+	"Json code block": {
+		"prefix": "json-code",
+		"body": [
+			"```json",
+			"$1",
+			"```"
+		],
+		"description": "Json代码片段/Json code block"
+	},
+	"Html code block": {
+		"prefix": "html-code",
+		"body": [
+			"```html",
+			"$1",
+			"```"
+		],
+		"description": "HTML代码片段/HTML code block"
+	},
+	"CSS code block": {
+		"prefix": "css-code",
+		"body": [
+			"```css",
+			"$1",
+			"```"
+		],
+		"description": "CSS代码片段/CSS code block"
+	},
+	"Markdown code block": {
+		"prefix": "md-code",
+		"body": [
+			"```markdown",
+			"$1",
+			"```"
+		],
+		"description": "Markdown 代码片段/Markdown code block"
+	},
+	"Shell code block": {
+		"prefix": "shell-code",
+		"body": [
+			"```shell",
+			"$1",
+			"```"
+		],
+		"description": "Shell代码片段/Shell code block"
+	},
+
+	// Special text block (math or knowledge)
+	"Insert Latex equation environment": {
+		"prefix": "equ-math",
+		"body": [
+			"\\begin{equation}",
+			"$1",
+			"\\end{equation}"
+		],
+		"description": "Latex 的 equation 环境"
+	},
+	"Insert Latex math expresstion label(index)": {
+		"prefix": "index-math",
+		"body": [
+			"(\\#eq:$1)"
+		],
+		"description": "Latex 数学公式标签编号"
+	},
+	"Insert math Theorem": {
+		"prefix": "theorem-math",
+		"body": [
+			"```{theorem, name=\"$1\", label=\"$2\"}",
+			"$3",
+			"```"
+		],
+		"description": "数学定理"
+	},
+	"Insert math Definition": {
+		"prefix": "def-math",
+		"body": [
+			"```{definition, name=\"$1\", label=\"$2\"}",
+			"$3",
+			"```"
+		],
+		"description": "数学定义"
+	},
+	"Insert math Lemma": {
+		"prefix": "lemma-math",
+		"body": [
+			"```{lemma, name=\"$1\", label=\"$2\"}",
+			"$3",
+			"```"
+		],
+		"description": "数学引理"
+	},
+	"Insert math Proposition": {
+		"prefix": "proposition-math",
+		"body": [
+			"```{proposition, name=\"$1\", label=\"$2\"}",
+			"$3",
+			"```"
+		],
+		"description": "数学命题"
+	},
+	"Insert math Corollary": {
+		"prefix": "corollary-math",
+		"body": [
+			"```{corollary, name=\"$1\", label=\"$2\"}",
+			"$3",
+			"```"
+		],
+		"description": "数学推论"
+	},
+	"Insert math Conjecture": {
+		"prefix": "conjecture-math",
+		"body": [
+			"```{conjecture, name=\"$1\", label=\"$2\"}",
+			"$3",
+			"```"
+		],
+		"description": "数学推测"
+	},
+	"Insert math exercise": {
+		"prefix": "exercise-math",
+		"body": [
+			"```{exercise, name=\"$1\", label=\"$2\"}",
+			"$3",
+			"```"
+		],
+		"description": "练习题"
+	},
+	"Insert example": {
+		"prefix": "example-math",
+		"body": [
+			"```{example, name=\"$1\", label=\"$2\"}",
+			"$3",
+			"```"
+		],
+		"description": "示例"
+	},
+	"Insert Proof": {
+		"prefix": "proof-math",
+		"body": [
+			"```{proof}",
+			"$1",
+			"```"
+		],
+		"description": "证明"
+	},
+	"Insert remark": {
+		"prefix": "remark-math",
+		"body": [
+			"```{remark}",
+			"$1",
+			"```"
+		],
+		"description": "标注"
+	},
+	"Insert Solution": {
+		"prefix": "solution-math",
+		"body": [
+			"```{solution}",
+			"$1",
+			"```"
+		],
+		"description": "解题方案"
+	},
+	
+	// Bookdown extend syntax for markdown
+	"Insert basically reference": {
+		"prefix": "ref",
+		"body": [
+			"\\@ref($1)"
+		],
+		"description": "bookdown 引用"
+	},
+	"Insert math expression reference": {
+		"prefix": "eq-ref",
+		"body": [
+			"\\@ref(eq:$1)"
+		],
+		"description": "bookdown 引用数学公式"
+	},
+	"Insert theorem reference": {
+		"prefix": "the-ref",
+		"body": [
+			"\\@ref(thm:$1)"
+		],
+		"description": "bookdown 引用定理"
+	},
+	"Insert lemma reference": {
+		"prefix": "lem-ref",
+		"body": [
+			"\\@ref(lem:$1)"
+		],
+		"description": "bookdown 引用引理"
+	},
+	"Insert corollary reference": {
+		"prefix": "cor-ref",
+		"body": [
+			"\\@ref(cor:$1)"
+		],
+		"description": "bookdown 引用推论"
+	},
+	"Insert prop reference": {
+		"prefix": "prop-ref",
+		"body": [
+			"\\@ref(prp:$1)"
+		],
+		"description": "bookdown 引用命题"
+	},
+	"Insert conjecture reference": {
+		"prefix": "conj-ref",
+		"body": [
+			"\\@ref(cnj:$1)"
+		],
+		"description": "bookdown 引用推测"
+	},
+	"Insert definition reference": {
+		"prefix": "def-ref",
+		"body": [
+			"\\@ref(def:$1)"
+		],
+		"description": "bookdown 引用定义"
+	},
+	"Insert example reference": {
+		"prefix": "exm-ref",
+		"body": [
+			"\\@ref(exm:$1)"
+		],
+		"description": "bookdown 引用示例"
+	},
+	"Insert exercise reference": {
+		"prefix": "exer-ref",
+		"body": [
+			"\\@ref(exr:$1)"
+		],
+		"description": "bookdown 引用习题"
+	},
+	"Insert a part": {
+		"prefix": "part",
+		"body": [
+			"# (PART) $1"
+		],
+		"description": "bookdown 部分声明"
+	},
+	"Insert an appendix": {
+		"prefix": "exer-ref",
+		"body": [
+			"# (APPENDIX) $1"
+		],
+		"description": "bookdown 附录声明"
+	},
+	"Text reference": {
+		"prefix": "txt-ref",
+		"body": [
+			"",
+			"(ref:$1)",
+			""
+		],
+		"description": "bookdown 声明文字引用段"
+	},
+
+	// 
+
+	// R language features (figure / table / r-code)
+
+	// HTML elements
+	"Insert HTML <span> Small Caps": {
+		"prefix": "small-caps-html",
+		"body": [
+			"<span style=\"font-variant:small-caps;\">$1</span>"
+		],
+		"description": "插入HTML的small caps标签"
+	},
+
+	// Others
+}
